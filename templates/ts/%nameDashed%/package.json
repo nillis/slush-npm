@@ -1,0 +1,21 @@
+{
+  "name": "<%= nameDashed %>",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nillis/<%= nameDashed %>.git"
+  },
+  "scripts": {
+    "postinstall": "npm run project-init",
+    "project-init": "tsd install node --resolve --save",
+    "vendor-update": "npm update && tsd update --overwrite --save",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "author": {
+    "name": "Niels Timmermans",
+    "email": "nillisti@gmail.com"
+  },
+  "license": "MIT"
+}
